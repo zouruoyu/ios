@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)calculateTip:(id)sender {
+    float totalBill = [self.totalBillText.text floatValue];
+    int totalPeople = [self.totalPersonText.text intValue];
+    int numOfPeopleYouPay = [self.numOfPeopleYouPayText.text intValue];
+    float tipPercent = [self.tipPercentText.text floatValue];
+    self.yourBillText.text = [[NSNumber numberWithFloat:(totalBill*numOfPeopleYouPay/totalPeople)] stringValue];
+    self.yourTipText.text = [[NSNumber numberWithFloat:([self.yourBillText.text floatValue]*tipPercent)] stringValue];
+}
 @end

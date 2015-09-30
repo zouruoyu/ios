@@ -15,6 +15,7 @@
 		E67AF1971BB9B07300272A69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67AF1951BB9B07300272A69 /* LaunchScreen.xib */; };
 		E67AF1A31BB9B07300272A69 /* Tip_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AF1A21BB9B07300272A69 /* Tip_CalculatorTests.m */; };
 		E67AF1B11BB9B41400272A69 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AF1B01BB9B41400272A69 /* SecondViewController.m */; };
+		E67AF1B41BBC8C9900272A69 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67AF1B31BBC8C9900272A69 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		E67AF1A21BB9B07300272A69 /* Tip_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tip_CalculatorTests.m; sourceTree = "<group>"; };
 		E67AF1AF1BB9B41400272A69 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E67AF1B01BB9B41400272A69 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E67AF1B21BBC8C9900272A69 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		E67AF1B31BBC8C9900272A69 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				E67AF18A1BB9B07300272A69 /* AppDelegate.h */,
+				E67AF1B21BBC8C9900272A69 /* ThirdViewController.h */,
+				E67AF1B31BBC8C9900272A69 /* ThirdViewController.m */,
 				E67AF18B1BB9B07300272A69 /* AppDelegate.m */,
 				E67AF18D1BB9B07300272A69 /* ViewController.h */,
 				E67AF18E1BB9B07300272A69 /* ViewController.m */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67AF1B11BB9B41400272A69 /* SecondViewController.m in Sources */,
+				E67AF1B41BBC8C9900272A69 /* ThirdViewController.m in Sources */,
 				E67AF18F1BB9B07300272A69 /* ViewController.m in Sources */,
 				E67AF18C1BB9B07300272A69 /* AppDelegate.m in Sources */,
 				E67AF1891BB9B07300272A69 /* main.m in Sources */,

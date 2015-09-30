@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)TipPercentSliderAction:(id)sender {
+    float billAmount = [self.BillAmountText.text floatValue];
+    self.TipPercentText.text = [[NSNumber numberWithFloat:self.TipPercentSlider.value] stringValue];
+    float tipPercent = [self.TipPercentText.text floatValue];
+    self.TipAmountText.text = [[NSNumber numberWithFloat:billAmount*tipPercent] stringValue];
+    
+}
 @end

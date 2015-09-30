@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Basice-->
+        <!--Basic-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -37,31 +37,87 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pa-3Y-fY8">
                                 <rect key="frame" x="217" y="58" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ahi-4Q-bcz">
-                                <rect key="frame" x="217" y="160" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZA-gq-DoT">
                                 <rect key="frame" x="217" y="296" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nSQ-PO-veZ">
+                                <rect key="frame" x="215" y="160" width="101" height="31"/>
+                                <connections>
+                                    <action selector="TipPercentSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pbB-aV-jBr"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-su-i9M">
+                                <rect key="frame" x="135" y="160" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Basice" id="ggQ-i1-9OX"/>
+                    <tabBarItem key="tabBarItem" title="Basic" id="ggQ-i1-9OX"/>
+                    <connections>
+                        <outlet property="BillAmountLabel" destination="6aW-u5-SK4" id="iT1-hZ-7JQ"/>
+                        <outlet property="BillAmountText" destination="5pa-3Y-fY8" id="Q7j-Jj-vgJ"/>
+                        <outlet property="TipAmountLabel" destination="RfP-pl-vUL" id="BeP-y3-PW2"/>
+                        <outlet property="TipAmountText" destination="zZA-gq-DoT" id="Wb0-37-cKZ"/>
+                        <outlet property="TipPercentLabel" destination="3qY-6V-bia" id="J4z-xa-ffh"/>
+                        <outlet property="TipPercentSlider" destination="nSQ-PO-veZ" id="yPg-Vx-siu"/>
+                        <outlet property="TipPercentText" destination="bkq-su-i9M" id="hSr-pJ-IaY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="-1803"/>
+            <point key="canvasLocation" x="826" y="-1833"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="eAH-lL-LUR">
+            <objects>
+                <viewController id="ZCp-gD-etX" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VlI-8H-Do1"/>
+                        <viewControllerLayoutGuide type="bottom" id="0VR-yW-FzM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Y3-nM-WBg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Percent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcx-Xt-Wmv">
+                                <rect key="frame" x="40" y="58" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ1-xr-d9Y">
+                                <rect key="frame" x="333" y="57" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jq1-RR-qt6">
+                                <rect key="frame" x="228" y="54" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" id="fFs-Ja-OyS"/>
+                    <connections>
+                        <outlet property="defaultTipPercent" destination="Kcx-Xt-Wmv" id="2t7-4H-bOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWz-J8-5vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="515"/>
         </scene>
         <!--Advanced-->
         <scene sceneID="yl7-M7-2wJ">
             <objects>
-                <viewController id="gEq-w0-5wl" sceneMemberID="viewController">
+                <viewController id="gEq-w0-5wl" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gc6-Sm-Woe"/>
                         <viewControllerLayoutGuide type="bottom" id="DZ4-6R-RRS"/>
@@ -136,19 +192,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKz-ja-j8Z">
+                                <rect key="frame" x="144" y="421" width="65" height="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateTip:" destination="gEq-w0-5wl" eventType="touchUpInside" id="Zej-BV-NYi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Advanced" id="t9R-rD-Nhq"/>
+                    <connections>
+                        <outlet property="NumOfPeopleYouPayLabel" destination="Zec-ix-BJb" id="pG2-DQ-ZWC"/>
+                        <outlet property="TipPercentLabel" destination="FWv-2r-qH6" id="Qeg-WV-ajM"/>
+                        <outlet property="TotalBillLabel" destination="PDy-sT-dtr" id="nQH-fv-AMv"/>
+                        <outlet property="TotalPeopleBill" destination="Vnl-kx-E1w" id="c8L-Sk-7vS"/>
+                        <outlet property="numOfPeopleYouPayLabel" destination="Zec-ix-BJb" id="Du0-Ma-SeP"/>
+                        <outlet property="numOfPeopleYouPayText" destination="PJB-40-yil" id="kdt-Wz-Bw5"/>
+                        <outlet property="tipPercentLabel" destination="FWv-2r-qH6" id="ZnQ-KK-ebt"/>
+                        <outlet property="tipPercentText" destination="Ze8-Vo-Elq" id="EVD-z4-Jhz"/>
+                        <outlet property="totalBillLabel" destination="PDy-sT-dtr" id="H4G-Nh-puM"/>
+                        <outlet property="totalBillText" destination="at4-IY-cW6" id="Ubf-zs-2fp"/>
+                        <outlet property="totalPeopleBill" destination="Vnl-kx-E1w" id="UOK-Ga-efn"/>
+                        <outlet property="totalPersonText" destination="Xm1-c9-pT8" id="3qV-bH-DgO"/>
+                        <outlet property="yourBillLabel" destination="BF7-4N-0zx" id="EWC-j4-85Z"/>
+                        <outlet property="yourBillText" destination="0Pz-we-AEc" id="0Vo-bH-Ozh"/>
+                        <outlet property="yourTipLabel" destination="KLg-dp-eJJ" id="xGf-Ur-jVy"/>
+                        <outlet property="yourTipText" destination="mGQ-Of-Hjf" id="hnR-zd-OGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bx-Vi-Syw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1305" y="-476"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Setting-->
         <scene sceneID="R0g-ve-5EH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="joJ-Ch-a90" sceneMemberID="viewController">
+                <tabBarController title="Setting" automaticallyAdjustsScrollViewInsets="NO" id="joJ-Ch-a90" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="1qL-sa-q2H">
@@ -158,6 +241,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1lZ-DW-oxH"/>
                         <segue destination="gEq-w0-5wl" kind="relationship" relationship="viewControllers" id="6mT-kR-hyO"/>
+                        <segue destination="ZCp-gD-etX" kind="relationship" relationship="viewControllers" id="HMM-RE-p9q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dG3-X8-y7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
