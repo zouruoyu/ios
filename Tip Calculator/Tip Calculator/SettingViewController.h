@@ -11,5 +11,7 @@
 @interface SettingViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISegmentedControl *defaultTipPercent;
 - (IBAction)onDefaultTipChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *themeColor;
+- (IBAction)onThemeChange:(id)sender;
 
 @end

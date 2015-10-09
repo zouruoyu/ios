@@ -117,14 +117,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Tip Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zyc-Ks-bMm">
-                                <rect key="frame" x="73" y="84" width="175" height="21"/>
+                                <rect key="frame" x="16" y="84" width="175" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="SaC-oF-upg">
-                                <rect key="frame" x="57" y="133" width="222" height="29"/>
+                                <rect key="frame" x="16" y="113" width="222" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="15%"/>
@@ -136,12 +136,36 @@
                                     <action selector="onTipChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="EFV-VA-ASY"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AIH-tb-z1e">
+                                <rect key="frame" x="16" y="173" width="96" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="GIa-q4-arH">
+                                <rect key="frame" x="16" y="202" width="123" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="light"/>
+                                    <segment title="dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onThemeChange:" destination="Gsv-Bf-yUE" eventType="valueChanged" id="KK2-X1-h4j"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" id="Syd-DA-pxw">
+                                <rect key="frame" x="16" y="160" width="261" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dny-Dh-Zua"/>
                     <connections>
                         <outlet property="defaultTipPercent" destination="SaC-oF-upg" id="ciN-DC-5Ii"/>
+                        <outlet property="themeColor" destination="GIa-q4-arH" id="xh8-GM-tI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5PR-8s-630" userLabel="First Responder" sceneMemberID="firstResponder"/>

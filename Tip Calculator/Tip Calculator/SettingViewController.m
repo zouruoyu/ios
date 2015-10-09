@@ -52,4 +52,9 @@
     int defaultTipSeletedIndex = [defaults integerForKey:@"defaultTipPercent"];
     self.defaultTipPercent.selectedSegmentIndex = defaultTipSeletedIndex;
 }
+- (IBAction)onThemeChange:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[self.themeColor titleForSegmentAtIndex:self.themeColor.selectedSegmentIndex] forKey:@"themeColor"];
+    [defaults synchronize];
+}
 @end

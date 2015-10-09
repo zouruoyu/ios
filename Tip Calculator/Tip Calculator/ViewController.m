@@ -25,6 +25,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"view will appear");
+    [self updateThemeColor];
     int oldTipIndex = self.tipPercent.selectedSegmentIndex;
     [self reloadDefaultTipPercent];
     int newTipIndex = self.tipPercent.selectedSegmentIndex;
@@ -62,6 +63,17 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     int defaultTipSeletedIndex = [defaults integerForKey:@"defaultTipPercent"];
     self.tipPercent.selectedSegmentIndex = defaultTipSeletedIndex;
+}
+
+- (void) updateThemeColor {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *newThemeColor = [defaults objectForKey:@"themeColor"];
+    if ([newThemeColor isEqualToString:@"dark"]) {
+        self.view.backgroundColor = [UIColor lightGrayColor];
+    } else {
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    
 }
 
 - (void) defaultTipPercentChanged:(int)oldDefaultTipPercent :(int)newDefaultTipPercent {
