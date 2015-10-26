@@ -13,6 +13,7 @@
 		E69095D41BDC6C3F0019F139 /* MovieDvdTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69095D31BDC6C3F0019F139 /* MovieDvdTabBarControllerViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E69095DA1BDC80550019F139 /* dvd.png in Resources */ = {isa = PBXBuildFile; fileRef = E69095D91BDC80550019F139 /* dvd.png */; settings = {ASSET_TAGS = (); }; };
 		E69095DE1BDC80F40019F139 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = E69095DD1BDC80F40019F139 /* movie.png */; settings = {ASSET_TAGS = (); }; };
+		E69095E01BDEBC0C0019F139 /* README in Resources */ = {isa = PBXBuildFile; fileRef = E69095DF1BDEBC0C0019F139 /* README */; settings = {ASSET_TAGS = (); }; };
 		E6C8A5341BDAE338009DEDB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8A5331BDAE338009DEDB3 /* main.m */; };
 		E6C8A5371BDAE338009DEDB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8A5361BDAE338009DEDB3 /* AppDelegate.m */; };
 		E6C8A53A1BDAE338009DEDB3 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8A5391BDAE338009DEDB3 /* MovieViewController.m */; };
@@ -34,6 +35,7 @@
 		E69095D31BDC6C3F0019F139 /* MovieDvdTabBarControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDvdTabBarControllerViewController.m; sourceTree = "<group>"; };
 		E69095D91BDC80550019F139 /* dvd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dvd.png; path = ../../../../Pictures/iConify/dvd.png; sourceTree = "<group>"; };
 		E69095DD1BDC80F40019F139 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movie.png; path = ../../../../Pictures/iConify/movie.png; sourceTree = "<group>"; };
+		E69095DF1BDEBC0C0019F139 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		E6C8A52F1BDAE338009DEDB3 /* RottenTomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C8A5331BDAE338009DEDB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C8A5351BDAE338009DEDB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		E6C8A5261BDAE338009DEDB3 = {
 			isa = PBXGroup;
 			children = (
+				E69095DF1BDEBC0C0019F139 /* README */,
 				E6C8A5311BDAE338009DEDB3 /* RottenTomato */,
 				E6C8A5301BDAE338009DEDB3 /* Products */,
 				C720759709B9326FD8FFAF4C /* Pods */,
@@ -189,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69095E01BDEBC0C0019F139 /* README in Resources */,
 				E6C8A5421BDAE338009DEDB3 /* LaunchScreen.storyboard in Resources */,
 				E69095DA1BDC80550019F139 /* dvd.png in Resources */,
 				E6C8A53F1BDAE338009DEDB3 /* Assets.xcassets in Resources */,
