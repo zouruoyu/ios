@@ -76,9 +76,7 @@
     cell.titleLabel.text = self.movies[indexPath.row][@"title"];
     cell.synopsisLabel.text = self.movies[indexPath.row][@"synopsis"];
     NSURL *url = [NSURL URLWithString:self.movies[indexPath.row][@"posters"][@"thumbnail"]];
-    
     [cell.movieImageView setImageWithURL:url];
-    
     return cell;
 }
 
@@ -93,7 +91,6 @@
     self.pullToRefreshController = [[UIRefreshControl alloc] init];
     [self.pullToRefreshController addTarget:self action:@selector(onRefresh) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.pullToRefreshController atIndex:0];
-    
     [self fetchMovies];
 }
 
