@@ -13,6 +13,8 @@
 		E69095C31BDC1B060019F139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69095C11BDC1B060019F139 /* Main.storyboard */; };
 		E69095C51BDC1B060019F139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69095C41BDC1B060019F139 /* Assets.xcassets */; };
 		E69095C81BDC1B060019F139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69095C61BDC1B060019F139 /* LaunchScreen.storyboard */; };
+		E69095E41BE029860019F139 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69095E21BE029860019F139 /* AutoLayoutViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E69095E51BE029860019F139 /* AutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69095E31BE029860019F139 /* AutoLayoutViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		E69095C41BDC1B060019F139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E69095C71BDC1B060019F139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E69095C91BDC1B060019F139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69095E11BE029860019F139 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		E69095E21BE029860019F139 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
+		E69095E31BE029860019F139 /* AutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,9 @@
 				E69095BE1BDC1B060019F139 /* ViewController.h */,
 				E69095BF1BDC1B060019F139 /* ViewController.m */,
 				E69095C11BDC1B060019F139 /* Main.storyboard */,
+				E69095E11BE029860019F139 /* AutoLayoutViewController.h */,
+				E69095E21BE029860019F139 /* AutoLayoutViewController.m */,
+				E69095E31BE029860019F139 /* AutoLayoutViewController.xib */,
 				E69095C41BDC1B060019F139 /* Assets.xcassets */,
 				E69095C61BDC1B060019F139 /* LaunchScreen.storyboard */,
 				E69095C91BDC1B060019F139 /* Info.plist */,
@@ -139,6 +147,7 @@
 				E69095C81BDC1B060019F139 /* LaunchScreen.storyboard in Resources */,
 				E69095C51BDC1B060019F139 /* Assets.xcassets in Resources */,
 				E69095C31BDC1B060019F139 /* Main.storyboard in Resources */,
+				E69095E51BE029860019F139 /* AutoLayoutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 				E69095C01BDC1B060019F139 /* ViewController.m in Sources */,
 				E69095BD1BDC1B060019F139 /* AppDelegate.m in Sources */,
 				E69095BA1BDC1B060019F139 /* main.m in Sources */,
+				E69095E41BE029860019F139 /* AutoLayoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

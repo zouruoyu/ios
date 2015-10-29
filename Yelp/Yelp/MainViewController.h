@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
+@property (strong, nonatomic) NSArray *businessArray;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
