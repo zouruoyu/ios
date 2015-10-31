@@ -70,8 +70,10 @@
                     <constraint firstItem="Tf4-5z-qSG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NNX-6g-0i6"/>
                     <constraint firstItem="hDM-c5-G6h" firstAttribute="leading" secondItem="DR1-jB-Zqe" secondAttribute="trailing" constant="5" id="OnA-14-qW2"/>
                     <constraint firstItem="LEp-xT-Nx9" firstAttribute="leading" secondItem="AOF-7R-Qrd" secondAttribute="trailing" constant="8" id="Q6m-RV-RAC"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vO2-6M-uOQ" secondAttribute="bottom" constant="7" id="R0v-lL-s2c"/>
                     <constraint firstItem="YO0-pU-Tgd" firstAttribute="leading" secondItem="Tf4-5z-qSG" secondAttribute="trailing" constant="8" id="UlJ-WE-zlt"/>
                     <constraint firstItem="DR1-jB-Zqe" firstAttribute="top" secondItem="Tf4-5z-qSG" secondAttribute="bottom" constant="3" id="b7b-aL-n4D"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AOF-7R-Qrd" secondAttribute="bottom" constant="7" id="get-OH-Br3"/>
                     <constraint firstAttribute="trailing" secondItem="YO0-pU-Tgd" secondAttribute="trailing" constant="8" id="qf8-qE-n51"/>
                     <constraint firstItem="AOF-7R-Qrd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qpt-Gh-WHQ"/>
                     <constraint firstItem="hDM-c5-G6h" firstAttribute="centerY" secondItem="DR1-jB-Zqe" secondAttribute="centerY" id="sxZ-Ai-Og1"/>

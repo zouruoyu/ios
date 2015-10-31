@@ -9,8 +9,9 @@
 #import "MainViewController.h"
 #import "YelpBusiness.h"
 #import "BusinessTableCell.h"
+#import "FilterViewController.h"
 
-@interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface MainViewController () <UITableViewDataSource, UITableViewDelegate, FilterViewControllerDelegate>
 
 @end
 
@@ -21,7 +22,12 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"BusinessTableCell" bundle:nil] forCellReuseIdentifier:@"BusinessTableCell"];
-    self.tableView.rowHeight = 86;
+    //self.tableView.rowHeight = 86;
+    self.tableView.estimatedRowHeight = 85;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    //set filter navigation bar item
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Filter" style:UIBarButtonItemStylePlain target:self action:@selector(onFilterButton)];
     
     [YelpBusiness searchWithTerm:@"Restaurants"
                         sortMode:YelpSortModeBestMatched
@@ -48,5 +54,21 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark - private method
+
+- (void)onFilterButton {
+    FilterViewController *vc = [[FilterViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    vc.delegate = self;
+    
+    [self presentViewController:nav animated:true completion:nil];
+    
+}
+
+- (void) filterViewControler:(FilterViewController *) filterViewController filterDidChange:(NSDictionary *) filters {
+    NSLog(@"Network request fired");
+}
+
 
 @end

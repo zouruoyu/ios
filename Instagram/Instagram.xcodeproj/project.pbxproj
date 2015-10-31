@@ -91,8 +91,8 @@
 		E68D06111BD98F6F00488046 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				E68D062F1BD9F37F00488046 /* RefreshController.h */,
 				E68D06301BD9F37F00488046 /* RefreshController.m */,
+				E68D062F1BD9F37F00488046 /* RefreshController.h */,
 				E68D06151BD98F6F00488046 /* AppDelegate.h */,
 				E68D06161BD98F6F00488046 /* AppDelegate.m */,
 				E68D06181BD98F6F00488046 /* PhotosViewController.h */,

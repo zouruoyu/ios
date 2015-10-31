@@ -15,7 +15,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     MainViewController *mainViewController = [[MainViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = nav;
     mainViewController.title = @"Yelp";
     
     self.window.backgroundColor = [UIColor whiteColor];
