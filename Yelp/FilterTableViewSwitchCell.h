@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FilterTableViewCell : UITableViewCell
+@class FilterTableViewSwitchCell;
+@protocol FilterTableViewSwitchCellDelegate <NSObject>
+
+- (void)switchCell:(FilterTableViewSwitchCell *)switchCell didChangeValue:(BOOL)changedValue;
+
+@end
+
+@interface FilterTableViewSwitchCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *filterLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *filterSwitch;
+@property (weak, nonatomic) id<FilterTableViewSwitchCellDelegate> delegate;
+
 - (IBAction)onChangeSwitch:(id)sender;
 
 @end

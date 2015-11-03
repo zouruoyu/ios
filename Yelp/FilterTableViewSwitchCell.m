@@ -6,9 +6,9 @@
 //  Copyright © 2015 codepath. All rights reserved.
 //
 
-#import "FilterTableViewCell.h"
+#import "FilterTableViewSwitchCell.h"
 
-@implementation FilterTableViewCell
+@implementation FilterTableViewSwitchCell
 
 - (void)awakeFromNib {
     // Initialization code
@@ -21,5 +21,6 @@
 }
 
 - (IBAction)onChangeSwitch:(id)sender {
+    [self.delegate switchCell:self didChangeValue:self.filterSwitch.on];    
 }
 @end

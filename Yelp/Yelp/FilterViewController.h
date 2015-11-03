@@ -12,13 +12,17 @@
 
 @protocol FilterViewControllerDelegate <NSObject>
 
-- (void) filterViewControler:(FilterViewController *) filterViewController filterDidChange:(NSDictionary *) filters;
+- (void) filterViewControler:(FilterViewController *) filterViewController filterDidChange:(NSMutableArray *) filters;
 
 @end
 
 @interface FilterViewController : UIViewController
 @property (weak, nonatomic) id<FilterViewControllerDelegate> delegate;
-@property NSDictionary *fitlers;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSArray *allFilters;
+@property (strong, nonatomic) NSMutableArray *selectedFilters;
+
+- (void) reloadOneSection:(NSInteger)section withRowAnimation:(UITableViewRowAnimation)rowAnimation;
 
 @end

@@ -10,6 +10,9 @@
 
 @interface MainViewController : UIViewController
 @property (strong, nonatomic) NSArray *businessArray;
+@property (strong, nonatomic) NSArray *filteredBusiness;
+@property Boolean isFilterOn;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
