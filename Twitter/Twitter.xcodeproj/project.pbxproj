@@ -51,7 +51,7 @@
 		E6E7B6171BF06C370057A620 /* NewTweetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTweetViewController.xib; sourceTree = "<group>"; };
 		E6E7B61A1BF1138D0057A620 /* TwitterNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterNavigationController.h; sourceTree = "<group>"; };
 		E6E7B61B1BF1138D0057A620 /* TwitterNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterNavigationController.m; sourceTree = "<group>"; };
-		E6E7B61D1BF144E40057A620 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		E6E7B61D1BF144E40057A620 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = Twitter/README; sourceTree = "<group>"; };
 		E6EF52611BEC4EC2006FA718 /* Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EF52651BEC4EC2006FA718 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6EF52671BEC4EC2006FA718 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 		E6EF52581BEC4EC2006FA718 = {
 			isa = PBXGroup;
 			children = (
+				E6E7B61D1BF144E40057A620 /* README */,
 				E6EF52631BEC4EC2006FA718 /* Twitter */,
 				E6EF52621BEC4EC2006FA718 /* Products */,
 				6E495117F4E1184A89A5D946 /* Pods */,
@@ -155,7 +156,6 @@
 				E6EF52721BEC4EC2006FA718 /* LaunchScreen.storyboard */,
 				E6EF52751BEC4EC2006FA718 /* Info.plist */,
 				E6EF52641BEC4EC2006FA718 /* Supporting Files */,
-				E6E7B61D1BF144E40057A620 /* README */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";

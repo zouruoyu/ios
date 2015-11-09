@@ -134,7 +134,7 @@
         self.filteredBusiness = [self.businessArray filteredArrayUsingPredicate:predicate];
     }
     
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
