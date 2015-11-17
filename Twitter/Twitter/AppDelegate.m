@@ -12,6 +12,7 @@
 #import "HomeViewController.h"
 #import "User.h"
 #import "TwitterNavigationController.h"
+#import "ContainerViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,11 +28,13 @@
     
     User *user = [User currentUser];
     if (user != nil) {
-        HomeViewController *vc = [[HomeViewController alloc] init];
-        TwitterNavigationController *nvc = [[TwitterNavigationController alloc] initWithRootViewController:vc];
-
-        self.window.rootViewController = nvc;
-                NSLog(@"Welcome user %@", user);
+//        HomeViewController *vc = [[HomeViewController alloc] init];
+//        TwitterNavigationController *nvc = [[TwitterNavigationController alloc] initWithRootViewController:vc];
+//
+//        self.window.rootViewController = nvc;
+//                NSLog(@"Welcome user %@", user);
+        ContainerViewController *vc = [[ContainerViewController alloc] init];
+        self.window.rootViewController = vc;
         
     } else {
         LoginViewController *vc = [[LoginViewController alloc] init];

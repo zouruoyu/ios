@@ -24,10 +24,17 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-oT-eMf">
                     <rect key="frame" x="16" y="29" width="50" height="50"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES" allowsDirectInteraction="YES"/>
+                    </accessibility>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="Seg-od-VRo"/>
                         <constraint firstAttribute="height" constant="50" id="Yya-tb-MUp"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="BeW-D1-TXA" appends="YES" id="Irm-ST-p0M"/>
+                    </connections>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reply" translatesAutoresizingMaskIntoConstraints="NO" id="cu2-hU-5tW">
                     <rect key="frame" x="35" y="214" width="15" height="15"/>
@@ -137,6 +144,7 @@
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="Hl1-WV-TSs" firstAttribute="leading" secondItem="cu2-hU-5tW" secondAttribute="trailing" constant="77" id="40v-bm-xwY"/>
                 <constraint firstItem="706-Tb-Juv" firstAttribute="centerY" secondItem="8WI-5N-pGJ" secondAttribute="centerY" id="4dS-vX-VLA"/>
@@ -180,6 +188,11 @@
             </constraints>
             <point key="canvasLocation" x="306" y="246"/>
         </view>
+        <tapGestureRecognizer id="BeW-D1-TXA">
+            <connections>
+                <action selector="onTapProfileImage:" destination="-1" id="1rV-JU-qlP"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="like" width="54" height="72"/>
